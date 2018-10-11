@@ -97,7 +97,7 @@ def add_data_to_open_humans(oh_member, ns_before, ns_after, ns_url, tempdir):
         data_type='profile', before_date=ns_before, after_date=ns_after)
 
     # Remove all files previously added to Open Humans.
-    delete_all_oh_files(oh_member)
+    # delete_all_oh_files(oh_member)
 
     # Upload files to Open Humans.
     upload_file_to_oh(oh_member, entries_filepath, entries_metadata)
