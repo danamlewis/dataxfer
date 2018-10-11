@@ -37,7 +37,7 @@ Local setup:
 4. Run `pipenv install` to install any needed dependencies automatically.
 5. Copy the environment variable file using `cp env.example .env`
 6. Open the `.env` file (`vi .env`) and edit to replace `CLIENT_ID` and `CLIENT_SECRET` with your project's matching ID and SECRET (see above)
-7. Initialize the database locally with `heroku local:run python manage.py migrate`
+7. Initialize the database locally with `heroku local:run python manage.py migrate` (you may need to add `--app your-app-name` for it to run).
 
 #### Running the app locally
 
@@ -65,6 +65,6 @@ Once you have your heroku app created, go to https://www.openhumans.org/direct-s
 2. Deploy your git repository to git (e.g. `git push heroku master`. Note you may need to set the remote, and do a `git pull`, before you can push.)
 3. On the Resources tab for your app, edit the Celery Worker to be active. (This may take some time to appear.)
 4. On the same Resources tab, add a CloudAMQP add-on and use the "Little Lemur" version.
-5. Initialize your database with `heroku run 'python manage.py migrate'`
+5. Initialize your database with `heroku run 'python manage.py migrate'` (you may need to add `--app your-app-name` for it to run). 
 
 Setup is now complete and the Heroku app should hopefully work!
