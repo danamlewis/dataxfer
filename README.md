@@ -14,7 +14,7 @@ First you will need an Open Humans project to test and develop on. You can set u
 
 The `Enrollment URL` would be a link to a final app page (http://yourapp.herokuapp.com) once development is complete.
 
-Set the `Redirect URL` to exactly: `http://127.0.0.1:5000/complete`
+Set the `Redirect URL` to: `http://127.0.0.1:5000/complete`
 
 Once created, you can go to https://www.openhumans.org/direct-sharing/projects/manage/ and click on the project name. You will find your `client_id` and`client_secret` here.
 
